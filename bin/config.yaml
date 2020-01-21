@@ -65,6 +65,12 @@ shape:
       alias               : p
       map                 : shape.spacing.padding
 
+    margin:
+      description         : Margin around shape (up to 4 x comma-separated)
+      default             : 0,0,0,0
+      alias               : margin
+      map                 : shape.spacing.margin
+
     box:
       description         : Box sizing strategy ("content", "padding" or "icon")
       default             : content

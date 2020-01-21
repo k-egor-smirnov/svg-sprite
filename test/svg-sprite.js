@@ -856,6 +856,7 @@ describe('svg-sprite', function () {
                         expectedImage: path.join(__dirname, 'expected', 'png', 'css.vertical.mixed.html.png'),
                         diffImage: path.join(__dirname, '..', 'tmp', 'view', 'png', 'css.mixed.html.diff.png')
                     }, function (error, imagesAreSame) {
+                        console.log(previewImage);
                         should(error).not.ok;
                         should.ok(imagesAreSame, 'The generated CSS preview doesn\'t match the expected one!');
                         done();
